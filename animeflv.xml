@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Directorio de Animes  — AnimeFLV</title>
+<meta name="description" content="El catálogo completo de animes que existen en nuestra base de datos, los puedes filtrar por tipo, categoría, año y mucho más, solo en tu página favorita: AnimeFLV">
+<meta name="robots" content="index, follow">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/css.css?v=1.2.6" />
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/bootstrap.css" />
+<script type="text/javascript" src="/assets/animeflv/js/modernizr.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<meta name="verify-admitad" content="34e2b77cc8" />
+<meta content='es' http-equiv='content-language' />
+<meta content='es' name='language' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="fb:app_id" content="1730508916998105" />
+<link rel="manifest" href="/manifest.json" />
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=1730508916998105&autoLogAppEvents=1"></script>
+<script src="/js/ads.js"></script>
+
+<div class="Wrapper">
+
+<header class="Header">
+<div class="Mid">
+<div class="Container">
+<div class="AX Row AFluid">
+<div class="Logo">
+<a href="/"><img src="/assets/animeflv/img/logo.png?v=2.3" alt="AnimeFLV" /></a>
+</div>
+<div class="AFixed">
+<input type="checkbox" hidden="hidden" id="BtnMenu">
+<label for="BtnMenu" class="BtnMenu fa-bars"><span>MENU</span></label>
+<nav class="CX Row">
+<input type="checkbox" hidden="hidden" id="Hd-Search">
+<div class="Search"> 
+<form action="/browse" method="get">
+<input name="q" type="text" id="search-anime" autocomplete="off" placeholder="Buscar...">
+<button><i class="fa-search"></i></button>
+</form>
+<div class="DpdwCnt TtCn">
+<ul class="ListResult"></ul>
+</div>
+</div>
+<div class="Login">
+<input type="checkbox" hidden="hidden" id="DpdwLnk-Login">
+<label for="DpdwLnk-Login" class="Button"><span class="fa-user">Login</span></label>
+<div class="DpdwCnt TtCn">
+<div class="Title">INICIAR SESION</div>
+<form action="/auth/sign_in" class="form-horizontal" method="POST"> <label class="Form-Icon Right">
+<input name="email" type="text" placeholder="E-Mail">
+<i class="fa-user"></i>
+</label>
+<label class="Form-Icon Right">
+<input name="password" type="password" placeholder="Contraseña">
+<input type="hidden" name="remember_me" value="1">
+ <i class="fa-lock"></i>
+</label>
+<button type="submit">INICIAR SESIÓN</button>
+<a href="/auth/facebook/sign_in" rel="nofollow" class="Button fb_login"><span class="fa-facebook">INICIAR SESION CON FB</span></a>
+<div class="Links">
+<a href="/auth/sign_up" rel="nofollow">Registrate</a>
+<a href="/auth/password/new" rel="nofollow">¿Olvidaste tu contraseña?</a>
+</div>
+</form> </div>
+</div>
+<ul class="Menu">
+<li><a href="/">Inicio</a></li>
+<li class="Current"><a href="/browse">Directorio Anime</a></li>
+</ul>
+<ul class="ListSocial BFixed">
+<li><a href="https://www.facebook.com/AnimeFLV/" rel="nofollow" target="_blank" class="fa-facebook"></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="Body">
+<div class="Container">
+<div class="Title Page fa-star B12">
+<h1>Lista completa de Animes</h1>
+</div>
+<main class="Main">
+
+<form action="/browse" method="get">
+<div class="filters" style="margin-bottom: 10px;">
+<select name="genre[]" id="genre_select" multiple="multiple">
+<option value="accion">Acci&oacute;n</option><option value="artes-marciales">Artes Marciales</option><option value="aventura">Aventuras</option><option value="carreras">Carreras</option><option value="ciencia-ficcion">Ciencia Ficci&oacute;n</option><option value="comedia">Comedia</option><option value="demencia">Demencia</option><option value="demonios">Demonios</option><option value="deportes">Deportes</option><option value="drama">Drama</option><option value="ecchi">Ecchi</option><option value="escolares">Escolares</option><option value="espacial">Espacial</option><option value="fantasia">Fantas&iacute;a</option><option value="harem">Harem</option><option value="historico">Historico</option><option value="infantil">Infantil</option><option value="josei">Josei</option><option value="juegos">Juegos</option><option value="magia">Magia</option><option value="mecha">Mecha</option><option value="militar">Militar</option><option value="misterio">Misterio</option><option value="musica">M&uacute;sica</option><option value="parodia">Parodia</option><option value="policia">Polic&iacute;a</option><option value="psicologico">Psicol&oacute;gico</option><option value="recuentos-de-la-vida">Recuentos de la vida</option><option value="romance">Romance</option><option value="samurai">Samurai</option><option value="seinen">Seinen</option><option value="shoujo">Shoujo</option><option value="shounen">Shounen</option><option value="sobrenatural">Sobrenatural</option><option value="superpoderes">Superpoderes</option><option value="suspenso">Suspenso</option><option value="terror">Terror</option><option value="vampiros">Vampiros</option><option value="yaoi">Yaoi</option><option value="yuri">Yuri</option> </select>
+<select name="year[]" id="year_select" multiple="multiple">
+<option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option> </select>
+<select name="type[]" id="type_select" multiple="multiple">
+<option value="tv">TV</option>
+<option value="movie">Película</option>
+<option value="special">Especial</option>
+<option value="ova">OVA</option>
+</select>
+<select name="status[]" id="status_select" multiple="multiple">
+<option value="1">En emisión</option>
+<option value="2">Finalizado</option>
+<option value="3">Próximamente</option>
+</select>
+<select name="order" id="order_select">
+<option value="default">Por Defecto</option>
+<option value="updated">Recientemente Actualizados</option>
+<option value="added">Recientemente Agregados</option>
+<option value="title">Nombre A-Z</option>
+<option value="rating">Calificación</option>
+</select>
+<button type="submit" class="btn btn-sm btn-primary">
+<span class="fa fa-filter" aria-hidden="true"></span> Filtrar
+</button>
+</div>
+</form>
+
+
+<ul class="ListAnimes AX Rows A03 C02 D02">
+<li>
+<article class="Anime alt B">
+<a href="/anime/koi-to-producer-evollove">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3334.jpg" alt="Koi to Producer: EVOL×LOVE"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Koi to Producer: EVOL×LOVE</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Koi to Producer: EVOL×LOVE</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.0</span></p>
+<p>La heroína de la historia heredó la compañía de su padre la cual ahora está a cargo de un programa de televisión como productora. Sin embargo, la compañía esta al borde de la bancarrota debido a la falta de capital. Mientras intenta salvar el que fue alguna vez un programa popular y al mismo tiempo a la compañía de su padre, conoce cuatro...</p>
+<span class="Flwrs fa-user"><span>3231</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/koi-to-producer-evollove">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/gibiate">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3333.jpg" alt="Gibiate"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Gibiate</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Gibiate</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">3.5</span></p>
+<p>Año 2030: Japón. Un virus ha infectado a los humanos en todo el mundo. Los infectados se convierten en monstruos de acuerdo con sus edades, sexos y razas. El virus fue llamado “Gibia”.
+Justo entonces, un samurái y un ninja aparecen en este Japón desolado. Ambos viajaron desde el antiguo periodo Edo, y lucharán en conjunto para ayudar a ...</p>
+<span class="Flwrs fa-user"><span>7301</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/gibiate">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/boku-no-hero-academia-the-movie-2-heroesrising">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3331.jpg" alt="Boku no Hero Academia the Movie 2: Heroes:Rising"></figure>
+<span class="Type movie">Película</span>
+</div>
+<h3 class="Title">Boku no Hero Academia the Movie 2: Heroes:Rising</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Boku no Hero Academia the Movie 2: Heroes:Rising</strong></div>
+<p><span class="Type movie">Película</span> <span class="Vts fa-star">4.6</span></p>
+<p>Durante un viaje escolar, los chicos de la clase 1-A pondrán a prueba sus poderes y todo lo que han aprendido en la academia de héroes, cuando se enfrenten a un villano con un enigmático don. Su poder es peligrosamente familiar y tal parece que Tomura Shigaraki está involucrado. Con All Might retirado y las vidas de los habitantes en peligro, D...</p>
+<span class="Flwrs fa-user"><span>4808</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/boku-no-hero-academia-the-movie-2-heroesrising">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/uzakichan-wa-asobitai">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3327.jpg" alt="Uzaki-chan wa Asobitai!"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Uzaki-chan wa Asobitai!</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Uzaki-chan wa Asobitai!</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.6</span></p>
+<p>Shinichi Sakurai solo desea un poco de paz y silencio en su vida. pero Hana Uzaki (su ruidosa y bien desarrollada kouhai) tiene otros planes. Todo lo que ella quiere es pasar el rato con él y molestarlo un poco. ¡Con la ayuda de su encanto e insistencia, este podría ser el inicio de una hermosa relación!</p>
+<span class="Flwrs fa-user"><span>20232</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/uzakichan-wa-asobitai">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/peter-grill-to-kenja-no-jikan">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3329.jpg" alt="Peter Grill to Kenja no Jikan"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Peter Grill to Kenja no Jikan</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Peter Grill to Kenja no Jikan</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.3</span></p>
+<p>Después de ganar un torneo y ser coronado como el guerrero más fuerte del mundo, Peter Grill descubre un problema en su actual vida maravillosa. Resulta que mujeres de todas las especies, desde ogros hasta elfos, están peleando cada una para obtener su “semilla” y asegurarse de dar a luz a fuertes descendientes.
+Pobre Peter, él solo quie...</p>
+<span class="Flwrs fa-user"><span>14233</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/peter-grill-to-kenja-no-jikan">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/yahari-ore-no-seishun-love-comedy-wa-machigatteiru-kan">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3328.jpg" alt="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.7</span></p>
+<p>La comedia romántica gira en torno a un estudiante de instituto bastante antisocial llamado Hachiman Hikigaya y que tiene una distorsionada visión de la vida, aparte de no tener amigos ni mucho menos novia. Cuando ve a sus compañeros de clase hablando alegremente de sus vidas adolescentes, él murmura que son todos una panda de mentirosos. Cuand...</p>
+<span class="Flwrs fa-user"><span>13769</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/yahari-ore-no-seishun-love-comedy-wa-machigatteiru-kan">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kanojo-okarishimasu">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3330.jpg" alt="Kanojo, Okarishimasu"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kanojo, Okarishimasu</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kanojo, Okarishimasu</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.6</span></p>
+<p>En Japón, los solitarios tienen una nueva opción; ¡un servicio online para rentar padres, hijos, e incluso novias! Cuando el amor platónico de Kazuya lo rechaza, él decide que está lo suficientemente desesperado para probar el servicio, y queda impactado cuando descubre lo hermosa que es su novia de alquiler.
+No obstante, ella quiere mante...</p>
+<span class="Flwrs fa-user"><span>22121</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kanojo-okarishimasu">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/no-guns-life-2nd-season">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3326.jpg" alt="No Guns Life 2nd Season"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">No Guns Life 2nd Season</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>No Guns Life 2nd Season</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.6</span></p>
+<p>Segunda parte de No Guns Life</p>
+<span class="Flwrs fa-user"><span>3832</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/no-guns-life-2nd-season">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/decadence">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3325.jpg" alt="Deca-Dence"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Deca-Dence</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Deca-Dence</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.4</span></p>
+<p>Han pasado muchos años desde que la humanidad fue llevada al borde de la extinción por la aparición repentina de las formas de vida desconocidas conocidas como Gadoll. Los humanos que sobrevivieron ahora viven en una fortaleza móvil de 3000 metros de altura construida para protegerse de la amenaza Gadoll.
+Los habitantes de Decadence se divid...</p>
+<span class="Flwrs fa-user"><span>13176</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/decadence">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/rezero-kara-hajimeru-isekai-seikatsu-2nd-season">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3324.jpg" alt="Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.7</span></p>
+<p>De un momento a otro, Subaru Natsuki ha sido llevado a otro mundo cuando salía de una tienda. Desconcertado, intenta comprender la situación pero ésta solo empeora cada vez más cuando es atacado por unos matones. Milagrosamente es salvado por una joven de cabello plateado, Subaru profundamente agradecido decide ayudarla para devolverle el favor...</p>
+<span class="Flwrs fa-user"><span>20956</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/rezero-kara-hajimeru-isekai-seikatsu-2nd-season">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/muhyo-to-rouji-no-mahouritsu-soudan-jimusho-2nd-season">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3323.jpg" alt="Muhyo to Rouji no Mahouritsu Soudan Jimusho 2nd Season"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Muhyo to Rouji no Mahouritsu Soudan Jimusho 2nd Season</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Muhyo to Rouji no Mahouritsu Soudan Jimusho 2nd Season</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.3</span></p>
+<p>Segunda temporada de Muhyo to Rouji no Mahouritsu Soudan Jimusho.</p>
+<span class="Flwrs fa-user"><span>2273</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/muhyo-to-rouji-no-mahouritsu-soudan-jimusho-2nd-season">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/umayon">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3332.jpg" alt="Umayon	"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Umayon	</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Umayon	</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.2</span></p>
+<p>En un mundo muy parecido al nuestro, los grandes caballos de carreras del pasado recibieron la oportunidad de renacer como “uma musume”, chicas con las orejas y la cola de un caballo, pero que también cuentan con su velocidad y resistencia. Las mejores de estas chicas tienen el privilegio de estudiar en la Academia Tracen en Tokio, con la espe...</p>
+<span class="Flwrs fa-user"><span>1262</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/umayon">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/lapis-relights">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3322.jpg" alt="Lapis Re:LiGHTs"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Lapis Re:LiGHTs</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Lapis Re:LiGHTs</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.0</span></p>
+<p>Las Idols no solo cantan, también pueden usar magia. ¿Crees en las Idols? En este mundo paralelo, las Idols no solo son cantantes ordinarias, también usan magia. Esto al concentrar las emociones del público durante sus conciertos, lo cual denominan "Orquesta". Usan su magia para derrotar a las bestias mágicas que aterrorizan a los seres human...</p>
+<span class="Flwrs fa-user"><span>2785</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/lapis-relights">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/maou-gakuin-no-futekigousha">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3321.jpg" alt="Maou Gakuin no Futekigousha"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Maou Gakuin no Futekigousha</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Maou Gakuin no Futekigousha</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.7</span></p>
+<p>A pesar de su apetito por la destrucción, ¡incluso los reyes demonio se cansan de la sangre y el caos en algunas veces! Cuando Anoth reencarna con la esperanza de una vida más pacífica, termina yendo a una escuela con sus descendientes en su viejo castillo 2,000 años después. Pero con la magia desapareciendo en esta nueva era, y Anoth conserv...</p>
+<span class="Flwrs fa-user"><span>27780</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/maou-gakuin-no-futekigousha">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/monster-musume-no-oishasan">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3320.jpg" alt="Monster Musume no Oishasan"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Monster Musume no Oishasan</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Monster Musume no Oishasan</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.4</span></p>
+<p>En el pueblo de Lindworm donde monstruos y humanos coexisten, el Dr. Glenn está a cargo de una clínica para chicas monstruo con su enfermera, una lamia llamada Sapphee. Recibir una propuesta de matrimonio por parte de una centauro herida en batalla, palpar suavemente la herida de una sirena, o suturar las delicadas heridas de una golem son cosas ...</p>
+<span class="Flwrs fa-user"><span>14835</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/monster-musume-no-oishasan">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/enen-no-shouboutai-ni-no-shou">
+<div class="Image fa-play-circle-o">
+ <figure><img src="https://animeflv.net/uploads/animes/covers/3318.jpg" alt="Enen no Shouboutai: Ni no Shou"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Enen no Shouboutai: Ni no Shou</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Enen no Shouboutai: Ni no Shou</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.8</span></p>
+<p>Segunda temporada de Enen no Shouboutai.</p>
+<span class="Flwrs fa-user"><span>22136</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/enen-no-shouboutai-ni-no-shou">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/dokyuu-hentai-hxeros">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3319.jpg" alt="Dokyuu Hentai HxEros"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Dokyuu Hentai HxEros</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Dokyuu Hentai HxEros</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.3</span></p>
+<p>En un mundo al borde de un gran desastre que comenzó hace cinco años, existen héroes que, con la ayuda de un dispositivo llamado HxEros, usan el poder Ecchi (H) y Erótico (Ero) para salvar el planeta de los monstruos libidinosos.
+Enjo Retto y Hoshino Kirara son amigos de la infancia que se han separado. Un día, se ven atrapados en una batal...</p>
+<span class="Flwrs fa-user"><span>10709</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/dokyuu-hentai-hxeros">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/baki-dai-reitaisaihen">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3317.jpg" alt="BAKI: dai reitaisai-hen"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">BAKI: dai reitaisai-hen</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>BAKI: dai reitaisai-hen</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.3</span></p>
+<p>El protagonista, Baki Hanma, entrena intensamente para ser tan fuerte como para superar a su padre, Yujiro Hanma, el luchador más fuerte del mundo. Cinco de los condenados a muerte más violentos y brutales del mundo se reúnen para enfrentar a Baki. Su objetivo es probar la derrota: su fuerza y ​​habilidad inigualables los han llevado a aburr...</p>
+<span class="Flwrs fa-user"><span>2465</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/baki-dai-reitaisaihen">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kitsutsuki-tanteidokoro">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3315.jpg" alt="Kitsutsuki Tanteidokoro"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kitsutsuki Tanteidokoro</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kitsutsuki Tanteidokoro</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.0</span></p>
+<p>La historia se desarrolla en 1909, durante la era Meiji, se centra en versiones ficticias del poeta Takuboku Ishikawa y del lingüista Kyōsuke Kindaichi, que eran conocidos en la vida real. En la novela, Takuboku dirige una agencia de detectives privados para apoyar a su familia. Ambos comienzan a investigar un caso de supuestas apariciones de fan...</p>
+<span class="Flwrs fa-user"><span>1904</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kitsutsuki-tanteidokoro">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/shokugeki-no-souma-gou-no-sara">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3313.jpg" alt="Shokugeki no Souma: Gou no Sara"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Shokugeki no Souma: Gou no Sara</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Shokugeki no Souma: Gou no Sara</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.5</span></p>
+<p>Quinta Temporada de Shokugeki no Souma.
+</p>
+<span class="Flwrs fa-user"><span>18063</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/shokugeki-no-souma-gou-no-sara">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/kaguyasama-wa-kokurasetai-tensaitachi-no-renai-zunousen-2nd-season">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3314.jpg" alt="Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen 2nd Season</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.8</span></p>
+<p>Segunda temporada de Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen</p>
+<span class="Flwrs fa-user"><span>15080</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/kaguyasama-wa-kokurasetai-tensaitachi-no-renai-zunousen-2nd-season">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+ <article class="Anime alt B">
+<a href="/anime/appareranman">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3312.jpg" alt="Appare-Ranman!"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Appare-Ranman!</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Appare-Ranman!</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.5</span></p>
+<p>La historia se desarrollará al final del siglo XIX, cerca ya del inicio del nuevo siglo. Tras ciertas circunstancias, el brillante pero socialmente inepto ingeniero Sorano Appare y el cobarde samurái Isshiki Kosame, se encuentran en un barco que va de Japón a América. Ambos deciden competir en la Trans-America Wild Race para hacerse con su prim...</p>
+<span class="Flwrs fa-user"><span>5983</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/appareranman">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/zashiki-warashi-no-tatamichan">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3311.jpg" alt="Zashiki Warashi no Tatami-chan"></figure>
+<span class="Type ova">OVA</span>
+</div>
+<h3 class="Title">Zashiki Warashi no Tatami-chan</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Zashiki Warashi no Tatami-chan</strong></div>
+<p><span class="Type ova">OVA</span> <span class="Vts fa-star">3.1</span></p>
+<p>La "comedia de mordaza de terror agradable" se centra en la vida de Tatami-chan, un fantasma sardónico de la prefectura de Iwate que ahora vive en Tokio entre otros espíritus, entidades sobrenaturales y humanos. Además de ocuparse de asuntos de otro mundo, el desempleado Tatami-chan también tiene que lidiar con la búsqueda de empleo, así como...</p>
+<span class="Flwrs fa-user"><span>496</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/zashiki-warashi-no-tatamichan">VER ANIME</a>
+</div>
+</article>
+</li>
+<li>
+<article class="Anime alt B">
+<a href="/anime/fugou-keiji-balanceunlimited">
+<div class="Image fa-play-circle-o">
+<figure><img src="https://animeflv.net/uploads/animes/covers/3310.jpg" alt="Fugou Keiji: Balance:Unlimited"></figure>
+<span class="Type tv">Anime</span>
+</div>
+<h3 class="Title">Fugou Keiji: Balance:Unlimited</h3>
+</a>
+<div class="Description">
+<div class="Title"><strong>Fugou Keiji: Balance:Unlimited</strong></div>
+<p><span class="Type tv">Anime</span> <span class="Vts fa-star">4.5</span></p>
+<p>La historia se centra en el increíblemente rico Kambe Daisuke, quien es un detective que se encarga de resolver casos de la manera más poco convencional. Aunque la novela de Tsutsui se publicó entre 1975 y 1977, el anime se desarrollará en la era moderna.
+Kambe es asignado a la “Unidad de Combate de Crímenes Modernos”, una unidad que, d...</p>
+<span class="Flwrs fa-user"><span>9902</span> Seguidores</span>
+<a class="Button Vrnmlk" href="/anime/fugou-keiji-balanceunlimited">VER ANIME</a>
+</div>
+</article>
+</li>
+</ul>
+
+<div class="NvCnAnm"><ul class="pagination"><li class="disabled"><a href="#" rel="prev">&laquo;</a></li><li class="active"><a href="/browse?page=1">1</a></li><li><a href="/browse?page=2">2</a></li><li><a href="/browse?page=3">3</a></li><li><a href="/browse?page=4">4</a></li><li><a href="/browse?page=5">5</a></li><li><a href="/browse?page=6">6</a></li><li><a href="/browse?page=7">7</a></li><li><a href="/browse?page=8">8</a></li><li><a href="/browse?page=9">9</a></li><li><a href="/browse?page=10">10</a></li><li><span>&hellip;</span></li><li><a href="/browse?page=137">137</a></li><li><a href="/browse?page=2" rel="next">&raquo;</a></li></ul></div> </main>
+</div>
+</div>
+
+
+<footer class="Footer">
+<div class="Container">
+<div class="BX Row BFluid Sp20 NMb">
+<div><p><span>Anime Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+<nav class="mnftxt">
+<a href="/condiciones-de-uso.html">Términos y Condiciones</a>
+<a href="/politica-de-privacidad.html">Política de Privacidad</a>
+<a href="/sobre-animeflv.html">Sobre AnimeFLV</a>
+</nav>
+</div>
+<ul class="ListSocial BFixed">
+<li><a href="https://www.facebook.com/AnimeFLV/" target="_blank" class="fa-facebook"></a></li>
+<li><a href="https://www.youtube.com/c/kudasai" target="_blank" class="fa-youtube"></a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+<script>var is_user = false;</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/jquery.typewatch.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/scrlbr.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/percircle.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/funciones.js?v=1.1.20"></script>
+<script type="text/javascript" src="/assets/animeflv/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/alertify.js"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="/assets/animeflv/js/ie/css3mq.js"></script>
+<![endif]-->
+<!--[if lte IE 9]><script type="text/javascript" src="/assets/animeflv/js/ie/ie.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/assets/animeflv/css/bootstrap-multiselect.css" />
+<script type="text/javascript" src="/assets/animeflv/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="/assets/animeflv/js/abrowser.js"></script>
+
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p--mN3UcHCw6ueQ"
+});
+</script>
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p--mN3UcHCw6ueQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+
+<script id="dsq-count-scr" src="//https-animeflv-net.disqus.com/count.js" async></script>
+<script src="/js/detector.js?v=1.0.1"></script>
+</body>
+</html>
